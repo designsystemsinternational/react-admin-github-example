@@ -7,7 +7,7 @@ import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
 const AdminPage = () => {
   return (
     <Admin
-      authProvider={buildAuthProvider("https://some.url/authenticate")}
+      authProvider={buildAuthProvider("/.netlify/functions/authenticate")}
       dataProvider={restProvider("http://localhost:3000")}
     >
       <Resource
