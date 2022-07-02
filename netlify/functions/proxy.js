@@ -16,7 +16,7 @@ const handler = async (event) => {
     };
   } catch (e) {
     return {
-      statusCode: e.statusCode,
+      statusCode: e.status,
       body: JSON.stringify({ error: e.message }),
     };
   }
