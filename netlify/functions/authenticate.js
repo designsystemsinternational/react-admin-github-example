@@ -4,6 +4,7 @@ const {
 
 const handler = async (event) => {
   const body = JSON.parse(event.body);
+
   const response = await authenticate({
     username: body.username,
     password: body.password,
@@ -12,7 +13,17 @@ const handler = async (event) => {
     token: process.env.GITHUB_TOKEN,
     secret: process.env.SECRET,
   });
-  return response;
+
+  if (response.authenticated) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify(response),
+    };
+  } else {
+    return {
+      statusCode: 401,
+    };
+  }
 };
 
 module.exports = {
