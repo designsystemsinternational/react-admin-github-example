@@ -15,9 +15,9 @@ const handler = async (event) => {
       body: JSON.stringify(response),
     };
   } catch (e) {
-    console.log("error", e, e.message, e.statusCode, e.name);
     return {
-      statusCode: 401,
+      statusCode: e.statusCode,
+      body: JSON.stringify({ error: e.message }),
     };
   }
 };
