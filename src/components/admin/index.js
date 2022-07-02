@@ -1,15 +1,17 @@
 import * as React from "react";
 import { Admin, Resource } from "react-admin";
-import { buildAuthProvider } from "@designsystemsinternational/react-admin-github";
-import restProvider from "ra-data-simple-rest";
+import {
+  buildAuthProvider,
+  buildJsonDataProvider,
+} from "@designsystemsinternational/react-admin-github";
 import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
+
+const authProvider = buildAuthProvider("/.netlify/functions/authenticate");
+const dataProvider = buildJsonDataProvider("/.netlify/functions/proxy");
 
 const AdminPage = () => {
   return (
-    <Admin
-      authProvider={buildAuthProvider("/.netlify/functions/authenticate")}
-      dataProvider={restProvider("http://localhost:3000")}
-    >
+    <Admin authProvider={authProvider} dataProvider={dataProvider}>
       <Resource
         name="posts"
         list={PostList}
