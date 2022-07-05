@@ -2,7 +2,9 @@ const fs = require("fs");
 
 for (let i = 0; i < 50; i++) {
   fs.writeFileSync(
-    `content/posts/post-number-${i}.json`,
+    `content/posts/2022-07-05-09-${i
+      .toString()
+      .padStart(2, "0")}-00-Post-number-${i}.json`,
     JSON.stringify(
       {
         title: `Post Number ${i}`,
