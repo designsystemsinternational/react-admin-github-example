@@ -6,6 +6,7 @@ import {
   Create,
   SimpleForm,
   TextField,
+  DateField,
   EditButton,
   TextInput,
 } from "react-admin";
@@ -15,7 +16,8 @@ export const PostIcon = BookIcon;
 export const PostList = (props) => (
   <List {...props}>
     <Datagrid>
-      <TextField source="id" />
+      <TextField source="title" />
+      <DateField source="createdAt" showTime />
       <EditButton />
     </Datagrid>
   </List>

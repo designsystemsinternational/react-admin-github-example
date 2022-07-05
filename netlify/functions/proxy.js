@@ -1,7 +1,6 @@
 const { proxy } = require("@designsystemsinternational/react-admin-github/api");
 
 const handler = async (event) => {
-  console.log(process.env.GITHUB_TOKEN);
   const { statusCode, body } = await proxy({
     repo: "designsystemsinternational/react-admin-github-example",
     httpMethod: event.httpMethod,
