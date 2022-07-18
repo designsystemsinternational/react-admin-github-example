@@ -16,7 +16,7 @@ export const PostIcon = BookIcon;
 export const PostList = (props) => (
   <List {...props}>
     <Datagrid>
-      <TextField source="title" />
+      <TextField source="slug" />
       <DateField source="createdAt" showTime />
       <EditButton />
     </Datagrid>

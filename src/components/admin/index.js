@@ -2,12 +2,18 @@ import * as React from "react";
 import { Admin, Resource } from "react-admin";
 import {
   buildAuthProvider,
-  buildJsonDataProvider,
+  buildDataProvider,
 } from "@designsystemsinternational/react-admin-github";
 import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
 
-const authProvider = buildAuthProvider("/.netlify/functions/authenticate");
-const dataProvider = buildJsonDataProvider("/.netlify/functions/proxy");
+const authProvider = buildAuthProvider("/.netlify/functions/proxy");
+const dataProvider = buildDataProvider("/.netlify/functions/proxy", {
+  resources: {
+    posts: {
+      loadJson: true,
+    },
+  },
+});
 
 const AdminPage = () => {
   return (
