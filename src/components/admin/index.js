@@ -10,7 +10,8 @@ const authProvider = buildAuthProvider("/.netlify/functions/proxy");
 const dataProvider = buildDataProvider("/.netlify/functions/proxy", {
   resources: {
     posts: {
-      loadJson: true,
+      handler: "json",
+      slug: "title",
     },
   },
 });
