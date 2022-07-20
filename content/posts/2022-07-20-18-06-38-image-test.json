@@ -1,0 +1,9 @@
+{
+  "title": "Image test",
+  "body": "dsfdsfgd",
+  "picture": {
+    "type": "file",
+    "name": "2022-07-20-18-06-38-boss.jpeg",
+    "src": "../files/2022-07-20-18-06-38-boss.jpeg"
+  }
+}
