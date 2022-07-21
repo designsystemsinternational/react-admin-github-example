@@ -2,8 +2,10 @@
   "title": "Another image changing title",
   "body": "dsfdsfsdfs",
   "picture": {
-    "type": "file",
-    "name": "2022-07-21-09-34-10-boss.jpeg",
-    "src": "../files/2022-07-21-09-34-10-boss.jpeg"
+    "rawFile": {
+      "path": "test.png"
+    },
+    "url": "blob:http://localhost:8888/3dc6da94-65bc-4089-a670-8121477c838b",
+    "name": "test.png"
   }
 }
