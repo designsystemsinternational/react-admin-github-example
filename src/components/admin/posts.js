@@ -11,8 +11,6 @@ import {
   TextInput,
   ImageInput,
   ImageField,
-  FileInput,
-  FileField,
 } from "react-admin";
 import BookIcon from "@mui/icons-material/Book";
 export const PostIcon = BookIcon;
