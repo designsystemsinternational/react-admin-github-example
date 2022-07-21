@@ -1,7 +1,8 @@
 const proxy = require("@designsystemsinternational/react-admin-github/api");
 
 const handler = async (event) => {
-  const { statusCode, body } = await proxy({
+  return await proxy({
+    url: "/.netlify/functions/proxy",
     httpMethod: event.httpMethod,
     httpQuery: event.queryStringParameters,
     httpHeaders: event.headers,
@@ -10,11 +11,6 @@ const handler = async (event) => {
     token: process.env.GITHUB_TOKEN,
     secret: process.env.SECRET,
   });
-  console.log(statusCode, body);
-  return {
-    statusCode,
-    body: JSON.stringify(body),
-  };
 };
 
 module.exports = {
