@@ -1,4 +1,9 @@
 {
   "title": "Post Number 28",
-  "body": "This is a post that I really like"
+  "body": "This is a post that I really like",
+  "picture": {
+    "type": "file",
+    "name": "2022-07-21-11-06-43-boss.jpeg",
+    "src": "../files/2022-07-21-11-06-43-boss.jpeg"
+  }
 }
