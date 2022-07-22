@@ -3,7 +3,22 @@
   "body": "This is a post that I really like",
   "picture": {
     "type": "file",
-    "name": "2022-07-21-11-06-43-boss.jpeg",
     "src": "../files/2022-07-21-11-06-43-boss.jpeg"
-  }
+  },
+  "nested": {
+    "image": {
+      "type": "file",
+      "src": "../files/2022-07-21-11-06-43-boss.jpeg"
+    }
+  },
+  "files": [
+    {
+      "type": "file",
+      "src": "../files/2022-07-21-11-06-43-boss.jpeg"
+    },
+    {
+      "type": "file",
+      "src": "../files/2022-07-21-11-06-43-boss.jpeg"
+    }
+  ]
 }
