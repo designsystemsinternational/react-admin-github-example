@@ -9,6 +9,7 @@ import { FileList, FileCreate, FileIcon } from "./files";
 
 const authProvider = buildAuthProvider("/.netlify/functions/proxy");
 const dataProvider = buildDataProvider("/.netlify/functions/proxy", {
+  filesPath: "[resource]/[slug]",
   resources: {
     posts: {
       handler: "json",
