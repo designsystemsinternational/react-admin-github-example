@@ -6,6 +6,7 @@ import {
 } from "@designsystemsinternational/react-admin-github";
 import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
 import { FileList, FileCreate, FileIcon } from "./files";
+import { ReleaseList, ReleaseCreate, ReleaseIcon } from "./releases";
 
 const authProvider = buildAuthProvider("/.netlify/functions/proxy");
 const dataProvider = buildDataProvider("/.netlify/functions/proxy", {
@@ -33,6 +34,12 @@ const AdminPage = () => {
         list={FileList}
         create={FileCreate}
         icon={FileIcon}
+      />
+      <Resource
+        name="releases"
+        list={ReleaseList}
+        create={ReleaseCreate}
+        icon={ReleaseIcon}
       />
     </Admin>
   );
