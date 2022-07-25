@@ -36,7 +36,7 @@ export const PostEdit = (props) => (
       <TextInput source="title" />
       <TextInput multiline source="body" />
       <ImageInput source="picture" label="Picture" accept="image/*">
-        <ImageField source="url" title="name" />
+        <ImageField source="url" title="id" />
       </ImageInput>
     </SimpleForm>
   </Edit>
@@ -48,7 +48,7 @@ export const PostCreate = (props) => (
       <TextInput source="title" />
       <TextInput multiline source="body" />
       <ImageInput source="picture" label="Picture" accept="image/*">
-        <ImageField source="url" title="name" />
+        <ImageField source="url" title="id" />
       </ImageInput>
     </SimpleForm>
   </Create>
