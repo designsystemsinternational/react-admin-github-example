@@ -16,7 +16,7 @@ export const UserIcon = GroupIcon;
 export const UserList = (props) => (
   <List {...props}>
     <Datagrid>
-      <TextField source="id" />
+      <TextField source="_ragInfo.slug" label="Email" />
       <EditButton />
     </Datagrid>
   </List>
@@ -29,7 +29,7 @@ const UserTitle = ({ record }) => {
 export const UserEdit = (props) => (
   <Edit title={<UserTitle />} {...props}>
     <SimpleForm>
-      <TextInput disabled source="id" label="email" />
+      <TextInput disabled source="id" label="Email" />
       <TextInput source="fullName" label="Full name" />
       <TextInput source="avatar" label="Avatar URL" />
       <PasswordInput source="password" />
@@ -40,7 +40,7 @@ export const UserEdit = (props) => (
 export const UserCreate = (props) => (
   <Create title="Create a User" {...props}>
     <SimpleForm>
-      <TextInput source="id" label="email" />
+      <TextInput source="id" label="Email" />
       <TextInput source="fullName" label="Full name" />
       <TextInput source="avatar" label="Avatar URL" />
       <PasswordInput source="password" />
