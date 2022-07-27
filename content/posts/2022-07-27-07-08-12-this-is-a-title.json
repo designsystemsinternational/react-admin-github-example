@@ -1,0 +1,8 @@
+{
+  "title": "This is a title",
+  "body": "This is a body",
+  "picture": {
+    "type": "file",
+    "src": "this-is-a-title/2022-07-27-07-08-12-boss.jpeg"
+  }
+}
