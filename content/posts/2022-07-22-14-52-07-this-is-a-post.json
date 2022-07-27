@@ -1,8 +1,0 @@
-{
-  "title": "This is a post",
-  "body": "This is a body",
-  "picture": {
-    "type": "file",
-    "src": "this-is-a-post/2022-07-22-14-52-07-boss.jpeg"
-  }
-}
