@@ -9,7 +9,6 @@ import { ReleaseList, ReleaseCreate, ReleaseIcon } from "./releases";
 
 const authProvider = buildAuthProvider("/.netlify/functions/proxy");
 const dataProvider = buildDataProvider("/.netlify/functions/proxy", {
-  filesPath: (resource, data) => `${resource}/${data.id.replace(".json", "")}`,
   resources: {
     posts: {
       handler: "json",

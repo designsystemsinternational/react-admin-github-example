@@ -2,12 +2,10 @@ import * as React from "react";
 import {
   List,
   Datagrid,
-  Edit,
   Create,
   SimpleForm,
   TextField,
   DateField,
-  EditButton,
   TextInput,
   BooleanInput,
 } from "react-admin";
@@ -19,7 +17,6 @@ export const ReleaseList = (props) => (
     <Datagrid>
       <TextField source="name" />
       <DateField source="createdAt" showTime />
-      <EditButton />
     </Datagrid>
   </List>
 );
