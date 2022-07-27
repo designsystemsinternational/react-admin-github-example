@@ -5,7 +5,6 @@ import {
   buildDataProvider,
 } from "@designsystemsinternational/react-admin-github";
 import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
-import { FileList, FileCreate, FileIcon } from "./files";
 import { ReleaseList, ReleaseCreate, ReleaseIcon } from "./releases";
 
 const authProvider = buildAuthProvider("/.netlify/functions/proxy");
@@ -28,12 +27,6 @@ const AdminPage = () => {
         edit={PostEdit}
         create={PostCreate}
         icon={PostIcon}
-      />
-      <Resource
-        name="files"
-        list={FileList}
-        create={FileCreate}
-        icon={FileIcon}
       />
       <Resource
         name="releases"
