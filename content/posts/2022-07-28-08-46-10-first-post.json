@@ -1,0 +1,8 @@
+{
+  "title": "First Post",
+  "body": "This is my first post",
+  "picture": {
+    "type": "file",
+    "src": "first-post/2022-07-28-08-46-10-boss.jpeg"
+  }
+}
