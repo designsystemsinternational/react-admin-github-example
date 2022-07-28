@@ -18,8 +18,8 @@ export const PostIcon = BookIcon;
 export const PostList = (props) => (
   <List {...props}>
     <Datagrid>
-      <TextField source="id" />
-      <DateField source="_ragInfo.createdAt" showTime />
+      <TextField source="_ragInfo.slug" label="Slug" />
+      <DateField source="_ragInfo.createdAt" label="Created at" showTime />
       <EditButton />
     </Datagrid>
   </List>

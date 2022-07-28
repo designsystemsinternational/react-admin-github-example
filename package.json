@@ -15,7 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@designsystemsinternational/react-admin-github": "^1.3.0",
+    "@designsystemsinternational/react-admin-github": "^1.3.2",
     "@loadable/component": "^5.15.2",
     "gatsby": "^4.17.2",
     "react": "^18.1.0",
