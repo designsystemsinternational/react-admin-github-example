@@ -5,6 +5,7 @@ import {
   buildDataProvider,
 } from "@designsystemsinternational/react-admin-github";
 import { PostList, PostEdit, PostCreate, PostIcon } from "./posts";
+import { FileList, FileEdit, FileCreate, FileIcon } from "./files";
 import { ReleaseList, ReleaseCreate, ReleaseIcon } from "./releases";
 import { UserList, UserEdit, UserCreate, UserIcon } from "./users";
 
@@ -27,6 +28,13 @@ const AdminPage = () => {
         edit={PostEdit}
         create={PostCreate}
         icon={PostIcon}
+      />
+      <Resource
+        name="files"
+        list={FileList}
+        edit={FileEdit}
+        create={FileCreate}
+        icon={FileIcon}
       />
       <Resource
         name="releases"
